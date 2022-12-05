@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800,900');
+body{ font-family: 'Work Sans', sans-serif; font-size: 14px; line-height: 1.5; background: #ebebeb;}
+
+.m-t-10 { margin-top: 10px;} .m-t-20 { margin-top: 20px;}
+.m-t-30 { margin-top: 30px;} .m-t-40 { margin-top: 40px;}
+.m-b-10 { margin-bottom: 10px;} .m-b-20 { margin-bottom: 20px;}
+.m-b-30 { margin-bottom: 30px;} .m-b-40 { margin-bottom: 40px;}
+.m-l-10 { margin-left: 10px;} .m-l-20 { margin-left: 20px;}
+.m-l-30 { margin-left: 30px;} .m-l-40 { margin-left: 40px;}
+/* .wd10 { width: 10%; float: left;} .wd20 { width: 20%; float: left;} .wd30 { width: 30%; float: left;}
+.wd40 { width: 40%; float: left;} .wd50 { width: 50%; float: left;} .wd60 { width: 60%; float: left;}
+.wd70 { width: 70%; float: left;} .wd80 { width: 80%; float: left;} .wd90 { width: 90%; float: left;} .wd100 { width: 100%; float: left;} */
+.wd10 { width: 10%;} .wd20 { width: 20%;} .wd30 { width: 30%;}
+.wd40 { width: 40%;} .wd50 { width: 50%;} .wd60 { width: 60%;}
+.wd70 { width: 70%;} .wd80 { width: 80%;} .wd90 { width: 90%;} .wd100 { width: 100%;}
+.wd10, .wd10, .wd20, .wd30, .wd40, .wd50, .wd60, .wd70, .wd80, .wd90, .wd100 { display: inline-block;}
+.col50 { width: 49%;}
+.col50.colleft { float: left;}
+.col50.colright { float: right;}
+.col50 .wd50 { width: 100%; float: left;}
+.col50 .col50 { width: 48%;}
+.fL { float: left !important;} .fR { float: right !important;}
+.underline { text-decoration: underline;}
+.op9 { opacity: .9;} .op8 { opacity: .8;} .op7 { opacity: .7;} .op6 { opacity: .6;}
+.op5 { opacity: .5;} .op4 { opacity: .4;} .op3 { opacity: .3;} .op2 { opacity: .2;}
+.op1 { opacity: .1;}
+.nodrop {cursor: no-drop;}
+
+/* color code */
+.white { color: #ffffff;} .bg-white { background-color: #ffffff !important; color: #676767 !important;}
+.blue { color: #1ba1e5;} .bg-blue { background-color: #1ba1e5 !important;}
+.purple { color: #448aff;} .bg-purple { background-color: #448aff !important;}
+.red { color: #ff5252;} .bg-red { background-color: #ff5252 !important;}
+.orange { color: #ff6d00;} .bg-orange { background-color: #ff6d00 !important;}
+.green { color: #43a047;} .bg-green { background-color: #43a047 !important;}
+.violet { color: #9162e4;} .bg-violet { background-color: #9162e4 !important;}
+.pink { color: #ff6090;} .bg-pink { background-color: #ff6090 !important;}
+.alt-blue { color: #7c9cad;} .bg-alt-blue { background-color: #7c9cad !important;}
+.bg-pink:hover, .bg-pink:focus, .bg-pink:active,
+.bg-purple:hover, .bg-purple:focus, .bg-purple:active,
+.bg-violet:hover, .bg-violet:focus, .bg-violet:active,
+.bg-alt-blue:hover, .bg-alt-blue:focus, .bg-alt-blue:active { color: #ffffff !important;}
+
+/* text color code */
+.gray-pale { color: #526273;}
+.gray-dark { color: #444444;}
+.gray-light { color: #908e8e;}
+.btn { -webkit-transition: box-shadow ease-in-out .1s; -moz-transition: box-shadow ease-in-out .1s; -o-transition: box-shadow ease-in-out .1s; transition: box-shadow ease-in-out .1s; color: #ffffff;}
+.btn[class*='bg-']:hover { box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1); }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus ,button:focus{ outline: none; outline-offset: 0;}
+
+.container { max-width: 960px; width: 100%; margin: 0 auto; position: relative; display: block;}
+.contact { background: #F9F9F9; padding: 25px; margin: 50px 0;}
+.contact h3 { display:block; font-size: 16px;}
+.contact p { margin: 5px 0;}
+hr { border-width: 7px; box-shadow: none; border-style: solid; border-color: #f3f3f3; margin: 7px 0; margin-left: 0; display: block;}
+
+fieldset { border: medium none !important; margin: 0 0 10px; min-width: 100%; padding: 0; width: 100%;}
+textarea { font-family: 'Work Sans', sans-serif;}
+
+.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact input[type="url"], .contact select, .contact textarea { width: 100%; border: 1px solid #CCC; background: #FFF; margin: 0 0 5px; line-height: 24px; padding: 0; text-indent: 8px;}
+.contact select { padding: 3px 7px; text-indent: 0;}
+
+.contact input[type="text"]:hover, .contact input[type="email"]:hover, .contact input[type="tel"]:hover, .contact input[type="url"]:hover, .contact textarea:hover { -webkit-transition: border-color 0.3s ease-in-out; -moz-transition: border-color 0.3s ease-in-out; transition: border-color 0.3s ease-in-out; border-color: #373737;}
+.contact textarea { max-height: 120px; min-height: 60px; min-width: 100%; max-width: 100%;}
+.contact button[type="submit"] { cursor: pointer; width: 100%; border: none; background: #0CF; color: #FFF; margin: 0 0 5px; padding: 10px; font-size: 15px;}
+.contact button[type="submit"]:hover { background: #09C; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; transition: background-color 0.3s ease-in-out;}
+
+.contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.contact input:focus, .contact textarea:focus { outline:0; border:1px solid #999;}
+::-webkit-input-placeholder { color:#888;}
+:-moz-placeholder { color:#888;}
+::-moz-placeholder { color:#888;}
+:-ms-input-placeholder { color:#888;}
+
+.question-checkbox { border: 5px solid #d7d7d7; margin-bottom: 10px; margin-left: -5px;}
+.question-checkbox .col50 { padding: 1% 2%; width: 46%;}
+.question-checkbox .col50 p { margin: 8px 0 0; font-weight: 600;}
+.question-checkbox .col50 label { margin: 0 10px 0 0; font-size: 13px;}
+.question-checkbox .col50 input[type="checkbox"] { position: relative;; top: 2px;}
+
+.table-wrapper { position: relative; overflow: hidden; width: 100%; max-width: 1150px;}
+.table-wrapper:after { content: ""; position: absolute; top: 0; left: 100%; width: 50px; height: 100%; border-radius: 10px 0 0 10px / 50% 0 0 50%;}
+.table-wrapper .table-inner { overflow-x: auto; border: 1px solid #ebebeb; padding: 0 7px;}
+.table-wrapper .table-inner::-webkit-scrollbar { -webkit-appearance: none; width: 14px; height: 14px;}
+.table-wrapper .table-inner::-webkit-scrollbar-thumb { border-radius: 5px; border: 2px solid #fff; background-color: #8e9eab;}
+.table-wrapper input[type="text"] { line-height: 24px; margin: 0;}
+
+.pricing-table { margin: 10px 0; text-align: center; font-size: 12px; overflow: hidden; border-radius: 5px;}
+.pricing-table th, .pricing-table td { padding: 4px 2px; min-width: 120px; border: none; text-align: center; font-weight: 500;}
+.pricing-table th { background: #8e9eab; color: #fff; font-size: 14px;}
+.pricing-table td:first-child { padding: 5px; text-align: left;}
+.pricing-table tr:nth-child(even) td { background: white;}
+
+@media (min-width: 860px) {
+	.table-wrapper { overflow: visible; -webkit-box-shadow: none; box-shadow: none;}
+	.table-wrapper:after { content: none;}
+}
+
+@media (max-width: 640px) {
+	label { font-size: 12px;}
+	.col50 .col50 { width: 100%;}
+}
+	</style>
+</head>
+<body>
+<div class="container">
+		<form class="contact" action="{{ url_for('fetch') }}" method="post">
+			<center><h3><strong>Patient Details</strong></h3></center>
+
+			<div class="col50 colleft">
+				<div class="col50 colleft">
+					<div class="wd50">
+						<label>Patient name</label>
+						<input placeholder="Patient name"  name="p_name" type="text" id = "name" required autofocus>
+					</div>
+
+				</div>
+				<div class="col50 colright">
+					<div class="wd50">
+						<label>Phone number</label>
+						<input placeholder="Phone number"  name="num" id = "number" type="tel" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="col50 colright">
+				<div class="col50 colleft">
+					<div class="wd50">
+						<label >Unique registration ID</label>
+						<input placeholder="Unique registration ID" name="u_id" type="text" required>
+					</div>
+				</div>
+				<div class="col50 colright">
+					<div class="wd50">
+						<label>Hospital Name</label>
+						<input placeholder="Hospital Visited" name="h_name" type="text" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="wd100"><hr></div>
+             <center><h3><strong>Terminology</strong></h3></center>
+			<div class="col50 colleft">
+				<div class="wd100">
+					<ol>
+						<li><b>Chest Pain Type</b></li><br>
+						<div>
+							In general, chest discomfort related to a heart attack or another heart problem may be described by or associated with one or more of the following: Pressure, fullness, burning or tightness in your chest. Crushing or searing pain that spreads to your back, neck, jaw, shoulders, and one or both arms
+						</div><br>
+						<ul>
+							<li>
+								<div>
+								<b>Typical Angina</b>: Typical (classic) angina chest pain consists of (1) Substernal chest pain or discomfort that is (2) Provoked by exertion or emotional stress and (3) relieved by rest or nitroglycerine (or both).
+								</div>
+							</li><br>
+							<li>
+								<div>
+								<b>Atypical Angina</b> : Atypical (probable) angina chest pain applies when 2 out of 3 criteria of classic angina are present.
+								</div>
+							</li><br>
+						    <li>
+								<div>
+								<b>Asymptomatic</b> : In medicine, any disease is classified asymptomatic if a patient tests as carrier for a disease or infection but experiences no symptoms. Whenever a medical condition fails to show noticeable symptoms after a diagnosis it might be considered asymptomatic.
+								</div>
+							</li>
+						</ul><br>
+						<li><b>Resting Electrocardiographic</b></li><br>
+						<div>Resting 12-lead electrocardiography (ECG) is a non-invasive test that can detect abnormalities including arrhythmias, evidence of coronary heart disease, left ventricular hypertrophy and bundle branch blocks.</div><br>
+					</ol>
+				</div>
+			</div>
+
+			<div class="col50 colright">
+				<div class="wd100">
+					<ol start = 3>
+						<li><b>Exercise Induced Angina</b></li><br>
+						<div>Warm-up angina is a common and intriguing phenomenon in which, in subjects with ischemic heart disease, angina induced by initial exercise is attenuated or even disappears if they briefly slacken or interrupt their exertion before resuming it at the same or even greater level of intensity</div><br>
+						<li><b>OLd Peak</b></li><br>
+						<div>ST depression induced by exercise relative to rest ('ST' relates to positions on the ECG plot.) slope: the slope of the peak exercise ST segment — 0: downsloping; 1: flat; 2: upsloping.</div><br>
+						<li><b>Major Vessels by Flourosopy</b></li><br>
+						<div>In cardiac catheterization , fluoroscopy is used as an adjunct to enable the doctor to see the flow of blood through the coronary arteries in order to evaluate the presence of arterial blockages</div><br>
+						<li><b>Thalassemias</b></li><br>
+						<div>Thalassemias are inherited blood disorders characterized by decreased hemoglobin production.[7] Symptoms depend on the type and can vary from none to severe.[1] Often there is mild to severe anemia (low red blood cells or hemoglobin).[1] Anemia can result in feeling tired and pale skin.[1] There may also be bone problems, an enlarged spleen, yellowish skin, and dark urine.[1] Slow growth may occur in children.</div><br>
+					</ol>
+
+				</div>
+			</div>
+
+			<div class="wd100"><hr></div>
+
+			<div class="wd100">
+				<h3><center><strong>Information for Prediction</strong></center></h3>
+			</div>
+
+			<div class="wd100 question-checkbox">
+				<div class="col50 colleft">
+					<p>Patient_Age</p>
+					<label><input type="number" min = 1 value="" name = "age" placeholder = "Years"></label>
+
+					<p>Sex</p>
+					<input type="radio" name ="sex" id="male" value="1">
+					<label for="male">Male</label><br>
+					<input type="radio" id="female" name = "sex" value="0">
+					<label for="female">Female</label><br>
+
+					<p>Chest Pain Type</p>
+					<input type="radio" name = "cst" id="typical angina" value="1">
+					<label for="typical angina">Typical Angina</label><br>
+					<input type="radio" name = "cst" id="atypical angina" value="2">
+					<label for="atypical angina">Atypical Angina</label><br>
+					<input type="radio" name = "cst" id="non-anginal pain" value="3">
+					<label for="non-anginal pain">Non-Anginal Pain</label><br>
+					<input type="radio" name = "cst" id="asymptomatic" value="0">
+					<label for="asymptomatic">Asymptomatic</label><br>
+
+					<p>Resting Blood Pressure</p>
+					<label><input type="number" name ="trestbps" min = 0 value="" placeholder = "in mm of Hg"></label>
+
+					<p>Serum Cholesterol</p>
+					<label><input type="number" name = "chol" min = 0 value="" placeholder = "in mm of Hg"></label>
+
+					<p>Fasting Blood Sugar</p>
+					<label><input type="number" name = "fbs" min = 0 value="" placeholder = "in mg/dl"></label>
+
+
+					<p>Resting Electrocardiographic</p>
+					<input type="radio" name = "restecg" id="normal1" value="1">
+					<label for="normal1">Normal</label><br>
+					<input type="radio" name = "restecg" id="ST-T wave abnormality" value="2">
+					<label for="ST-T wave abnormality">ST-T Wave Abnormality</label><br>
+					<input type="radio" name = "restecg" id="hypertrophy" value="0">
+					<label for="hypertrophy">Hypertrophy</label><br>
+
+
+				</div>
+
+				<div class="col50 colright">
+					<p>Maximum Heart Rate</p>
+					<label name="thalach"><input type="number" name = "thalach" min = 0 value="" placeholder = "in bps"></label>
+
+					<p>Exercise Induced Angina</p>
+					<input type="radio" name = "exang" id="Yes" value="1">
+					<label for="Yes">1</label><br>
+					<input type="radio" name = "exang" id="No" value="0">
+					<label for="No">0</label><br>
+
+					<p>Old Peak</p>
+					<label name="oldpeak"><input type="number" name = "oldpeak" min = 0 step = "0.1" value="" placeholder = ""></label>
+
+					<p> Slope of Peak Exercise ST Segment </p>
+					<input type="radio" name = "slope" id="upsloping" value="2">
+					<label for="upsloping">Up Sloping</label><br>
+					<input type="radio" name = "slope" id="flat" value="1">
+					<label for="flat">Flat</label><br>
+					<input type="radio" name = "slope" id="downsloping" value="0">
+					<label for="downsloping">Down Sloping</label><br>
+
+					<p>Major Vessels by Flourosopy</p>
+					<label name="ca"><input type="number" name = "ca" min = 0 max = 3 value="" placeholder = ""></label>
+
+					<p>Thalassemia</p>
+					<input type="radio" name = "thal" id="normal" value="2">
+					<label for="normal">Normal</label><br>
+					<input type="radio" name = "thal" id="fixed defect" value="1">
+					<label for="fixed defect">Flat</label><br>
+					<input type="radio" name = "thal" id="reversable defect" value="3">
+					<label for="reversable defect">Reversable Defect</label><br>
+
+				</div>
+			</div>
+			<div class="wd100">
+				<button name="submit" type="submit" id=""  data-submit="...Sending">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

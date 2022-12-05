@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name=”viewport”  charset="UTF-8" content=”width=device-width, initial-scale=1″>
+    <title>Title</title>
+    <style>
+    styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    }
+    styled-table th,styled-table td {
+    padding: 12px 15px;
+    }
+    styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    }
+
+   styled-table tbody tr:nth-of-type(even) {
+   background-color: #f3f3f3;
+   }
+
+    styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+    }
+
+    styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    }
+    </style>
+
+</head>
+<body>
+<p>The enterd values :{{X_New}} and The person {{pre}} heart attack."</p>
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th> Registered Id </th>
+            <th> Hospital Name </th>
+            <th> Age </th>
+            <th> Sex </th>
+            <th> Chest Pain Type </th>
+            <th> Resting Blood Pressure</th>
+            <th> Serum Cholesterol </th>
+            <th> Fasting Blood Sugar </th>
+            <th>Resting Electrocardiographic<th>
+            <th> Maximum Heart Rate </th>
+            <th>Exercise Induced Angina</th>
+            <th>Old Peak</th>
+            <th>Slope of Peak Exercise ST Segment</th>
+            <th> Major Vessels by Flourosopy</th>
+            <th> Thalassemia </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {
+            'pname':p_name,
+            'number':num,
+            'u_id': u_id,
+            'h_name':h_name,
+            'age': age,
+            'thalach': thalach,
+            'trtbps': trestbps,
+            'oldpeak': oldpeak,
+            'sex': sex,
+            'cst': cst,
+            'exang': exang,
+            'slope': slope,
+            'ca': ca,
+            'thal':thal,
+           'chol': chol,
+        'restecg':restecg}
+            <td>{{info.pame}}</td>
+            <td>{{info.number}}</td>
+            <td>{{info.u_id}}</td>
+            <td>{{info.hname}}</td>
+            <td>{{info.age}}</td>
+            <td>{{info.cst}}</td>
+            <td>{{info.trtbps}}</td>
+            <td>{{info.chol}}</td>
+            <td>{{info.fbs}}</td>
+            <td>{{info.restecg}}</td>
+            <td>{{info.thalach}}</td>
+            <td>{{info.exang}}</td>
+            <td>{{info.oldpeak}}</td>
+            <td>{{info.slope}}</td>
+            <td>{{info.ca}}</td>
+            <td>{{info.thal}}</td>
+        </tr>
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+</body>
+</html>

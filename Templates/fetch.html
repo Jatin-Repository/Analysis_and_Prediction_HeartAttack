@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .styled-table thead tr {
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .styled-table th,styled-table td {
+    padding: 12px 15px;
+    }
+    .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    }
+
+   .styled-table tbody tr:nth-of-type(even) {
+   background-color: #f3f3f3;
+   }
+
+    styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+    }
+
+    styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    }
+    </style>
+
+</head>
+<body style="background-color:LightGray;">
+    <table class="styled-table center">
+    <thead>
+        <tr>
+            <h2 align="center">REPORT SHEET</h2>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Registered Id </th>
+            <th>Hospital Name </th>
+            <th> Age </th>
+            <th> Sex </th>
+            <th> Chances of Heart Attack</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align ="center">{{name}}</td>
+            <td align ="center">{{number}}</td>
+            <td align ="center">{{u_id}}</td>
+            <td align ="center">{{h_name}}</td>
+            <td align ="center">{{age}}</td>
+            <td align ="center">{{sex}}</td>
+            <td align ="center"><b>{{pre}}</b></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
