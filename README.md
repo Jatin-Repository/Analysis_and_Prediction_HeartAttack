@@ -3,6 +3,8 @@ Under this Repository, I have tried to create a UI for my Machine Learning Proje
 Intially User will vist the page where he/she need to enter his/her own details along with the health up detail, recived from the LAB.
 Later, on submission it shows the chances of person to suffer from heart attack or not.
 
+# Kaggle Notebook
+<a href="https://www.kaggle.com/code/sing05jatin/predection-and-analysis-of-heart-attack" target="_blank">Kaggle Notebook</a>
 
 # Input
 ![Sample Input 1_1](https://github.com/Jatin-Repository/Analysis_and_Prediction_HeartAttack/blob/master/Snapshot/Snap_Shot_1.png)
